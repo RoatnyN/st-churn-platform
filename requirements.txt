@@ -1,0 +1,3 @@
+pandas==1.4.4
+anaconda-client==1.11.0
+anaconda-navigator==2.3.2
