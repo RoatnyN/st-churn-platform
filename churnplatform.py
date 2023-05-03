@@ -5,7 +5,7 @@ import seaborn as sns
 import pickle
 import numpy as np
 
-df=pd.read_csv("/Users/roatny/Desktop/Masterclass/Churnplatform/data/Customer Churn.csv")
+df=pd.read_csv("Customer Churn.csv")
 #import plost
 
 st.set_page_config(layout='wide', initial_sidebar_state='expanded')
@@ -26,8 +26,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 
 # Load breast cancer dataset
-data = pd.read_csv('/Users/roatny/Desktop/Masterclass/Churnplatform/data/Customer Churn.csv')
-X=data.drop('Churn',axis=1)
+X=df.drop('Churn',axis=1)
 y=df['Churn']
 
 # Train/test split
