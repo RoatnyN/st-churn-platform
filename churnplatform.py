@@ -10,7 +10,7 @@ df=pd.read_csv("Customer Churn.csv")
 
 st.set_page_config(layout='wide', initial_sidebar_state='expanded')
 
-with open('/Users/roatny/Desktop/Masterclass/Churnplatform/churnplatform.css') as f:
+with open('churnplatform.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
     
 st.sidebar.header('CHURN PREDICTION `Dashboard`')
